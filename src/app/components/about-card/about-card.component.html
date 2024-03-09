@@ -1,0 +1,65 @@
+<div class="about-card">
+  <div class="items-cover"></div>
+    <div class="about-card-wrapper">
+      <div class="items-wrap">
+
+        <div class="about-card-content fade-up-slow item">
+          <h2 class="fw-bold fs-2">{{title}}</h2>
+          <p class="fs-5 my-2 ">{{descr}}</p>
+        </div>
+  
+        <div class="ring-container">
+          <ng-container *ngIf="skillType == 'ui'">
+            <app-skill-icon icon="assets/tech/sketch.svg" class="sketch scale-up item"></app-skill-icon>
+            <app-skill-icon icon="assets/tech/photoshop.svg" class="photoshop scale-up item"></app-skill-icon>
+            <app-skill-icon icon="assets/tech/invision.svg" class="invision scale-up item"></app-skill-icon>
+          </ng-container>
+  
+          <ng-container *ngIf="skillType == 'fe'">
+            <app-skill-icon icon="assets/tech/angular.svg" class="angular scale-up item"></app-skill-icon>
+            <app-skill-icon icon="assets/tech/react.svg" class="react scale-up item"></app-skill-icon>
+            <app-skill-icon icon="assets/tech/typescript.svg" class="typescript scale-up item"></app-skill-icon>
+            <app-skill-icon icon="assets/tech/sass.svg" class="sass scale-up item"></app-skill-icon>
+          </ng-container>
+          
+          
+          <svg 
+            [class.fe]="skillType == 'fe'" 
+            [class.ui]="skillType == 'ui'" 
+            class="ring" 
+            width="655" 
+            height="655" 
+            viewBox="0 0 655 655" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg">
+            <mask id="path-1-inside-1_48_14" fill="white">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M327.5 655C508.373 655 655 508.373 655 327.5C655 146.627 508.373 0 327.5 0C146.627 0 0 146.627 0 327.5C0 508.373 146.627 655 327.5 655ZM327.5 544.773C447.497 544.773 544.773 447.497 544.773 327.5C544.773 207.503 447.497 110.227 327.5 110.227C207.503 110.227 110.227 207.503 110.227 327.5C110.227 447.497 207.503 544.773 327.5 544.773Z"/>
+            </mask>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M327.5 655C508.373 655 655 508.373 655 327.5C655 146.627 508.373 0 327.5 0C146.627 0 0 146.627 0 327.5C0 508.373 146.627 655 327.5 655ZM327.5 544.773C447.497 544.773 544.773 447.497 544.773 327.5C544.773 207.503 447.497 110.227 327.5 110.227C207.503 110.227 110.227 207.503 110.227 327.5C110.227 447.497 207.503 544.773 327.5 544.773Z" fill="url(#paint0_linear_48_14)"/>
+            <path d="M654 327.5C654 507.821 507.821 654 327.5 654V656C508.926 656 656 508.926 656 327.5H654ZM327.5 1C507.821 1 654 147.179 654 327.5H656C656 146.074 508.926 -1 327.5 -1V1ZM1 327.5C1 147.179 147.179 1 327.5 1V-1C146.074 -1 -1 146.074 -1 327.5H1ZM327.5 654C147.179 654 1 507.821 1 327.5H-1C-1 508.926 146.074 656 327.5 656V654ZM543.773 327.5C543.773 446.945 446.945 543.773 327.5 543.773V545.773C448.049 545.773 545.773 448.049 545.773 327.5H543.773ZM327.5 111.227C446.945 111.227 543.773 208.055 543.773 327.5H545.773C545.773 206.951 448.049 109.227 327.5 109.227V111.227ZM111.227 327.5C111.227 208.055 208.055 111.227 327.5 111.227V109.227C206.951 109.227 109.227 206.951 109.227 327.5H111.227ZM327.5 543.773C208.055 543.773 111.227 446.945 111.227 327.5H109.227C109.227 448.049 206.951 545.773 327.5 545.773V543.773Z" fill="#2A2545" mask="url(#path-1-inside-1_48_14)"/>
+            <circle cx="327.5" cy="327.5" r="272" stroke="url(#paint1_linear_48_14)"/>
+            <defs>
+              <linearGradient id="paint0_linear_48_14" x1="327.5" y1="0" x2="327.5" y2="655" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1F1C32"/><stop offset="1" stop-color="#1D1942"/>
+              </linearGradient>
+              <linearGradient id="paint1_linear_48_14" x1="327.5" y1="55" x2="327.5" y2="600" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#2C2948"/><stop offset="0.47" stop-color="#463B97"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      
+        <ng-container *ngIf="skillType == 'ui'">
+          <app-skill-card class="figma fade-up item"></app-skill-card>
+          <app-skill-card [skills]="skills.xd" class="xd fade-up item"> </app-skill-card>
+        </ng-container>
+        
+        <ng-container *ngIf="skillType == 'fe'">
+          <app-skill-card [skills]="skills.js" class="js fade-up item"> </app-skill-card>
+          <app-skill-card [skills]="skills.css" class="css fade-up item"> </app-skill-card>
+          <app-skill-icon  icon="assets/tech/nodejs.svg" class="nodejs scale-up item"></app-skill-icon>
+          <app-skill-icon icon="assets/tech/redux.svg" class="redux scale-up item"></app-skill-icon>
+        </ng-container>
+      </div>
+  </div>
+</div>

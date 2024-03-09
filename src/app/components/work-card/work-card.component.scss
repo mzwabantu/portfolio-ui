@@ -1,0 +1,88 @@
+:host {
+    .work-card {
+        --radius: 16px;
+        position: relative;
+        margin: 1rem auto;
+        background-image: linear-gradient(to right, var(--mz-light-pink), var(--mz-yellow), var(--mz-lime), var(--mz-dark-orange));
+        padding: 2px;
+        border-radius: var(--radius);
+        max-width: 465px;
+
+        &-container {
+            min-height: 580px;
+        }
+        &-wrapper {
+            border-radius: var(--radius);
+            padding: 4.155rem;
+            background-color: #13101E;
+            min-height: 520px;
+
+            @media(max-width: 576px) {
+                padding: 4.155rem 3rem;
+                min-height: 470px;
+
+                img {
+                    width: 30px;
+                }
+            }
+
+            h5, h5 a {
+                font-size: 28px;
+                color: white;
+                text-decoration: none;
+                font-weight: 500;
+
+                @media(max-width: 576px) {
+                    font-size: 1.35rem;
+                }
+            }
+
+            p {
+                color: #AEB5B9;
+
+                &.role { font-size: 18px}
+            }
+
+            .skill-btn {
+                font-size: 12px;
+                line-height: 30px;
+                padding: 0 12px;
+                background-color: #1B1A37;
+                border: 1px solid #2C2B44;
+                border-radius: 36px;
+                display: inline-block;
+                margin: .5rem .5rem 0 0;
+            }
+
+            .descr {
+                font-size: 18px;
+                line-height: 34px;
+            }
+            
+           .skill-btn, h5, p, img {
+             animation-name: showUp;
+             animation-timing-function: ease-in-out;
+            }
+            img {animation-duration: 300ms;}
+            h5 {animation-duration: 350ms;}
+            p.role {animation-duration: 400ms;}
+            p.descr {animation-duration: 450ms;}
+            .skill-btn {animation-duration: 500ms;}
+
+            @keyframes showUp {
+                0% {opacity: 0; transform: translateY(15px); }
+                100% {opacity: 1; transform: none }
+            }
+
+        }
+
+        &:hover {
+            .work-card-wrapper { background-image: linear-gradient(to top, #13101E, rgba(50,12,63,0.15));}
+            .link-icon {
+                opacity: 1;
+                visibility: visible;
+                transform: rotate(45deg) scale(1);
+            }
+        }
+    }
+}

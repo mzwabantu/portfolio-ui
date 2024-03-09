@@ -1,0 +1,17 @@
+
+<ng-container *ngIf="data && data.isActive">
+    <div class="work-card-container">
+        <div class="work-card">
+            <div class="work-card-wrapper">
+                <img [src]="data.logo" alt="{{data.company}}">
+                <h5 class="mt-2 mb-1">
+                    <a [href]="data.url" target="_blank">{{data.company}} <i class="bi bi-arrow-up-short link-icon"></i></a>
+                </h5>
+                <p class="role fw-light pb-3">{{data.position}}</p>
+                <p class="my-4 pb-2 descr" style="line-height: 1.5;">{{data.description}}</p>
+        
+                <div *ngFor="let stx of data.stack" class="skill-btn">{{stx}}</div>
+            </div>
+        </div>
+    </div>
+</ng-container>

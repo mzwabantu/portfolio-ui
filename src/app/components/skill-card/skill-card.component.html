@@ -1,0 +1,15 @@
+<div class="skill-card d-flex">
+    <div class="skill-icon" [style.backgroundColor]="skills.iconColor">
+        <img width="36" [src]="skills.icon" alt="icon">
+    </div>
+    <div class="skill-content">
+        <h5>{{skills.title}}</h5>
+        <div class="d-flex align-items-center justify-content-between">
+            <app-progress-bar 
+                [percent]="skills.percent" 
+                [barColor]="skills.barColor">
+            </app-progress-bar>
+            <p class="mb-0 ms-2 years">{{skills.years}}</p>              
+        </div>
+    </div>
+</div>

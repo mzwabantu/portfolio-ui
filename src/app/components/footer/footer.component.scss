@@ -1,0 +1,32 @@
+:host {
+    footer.main-footer {
+        position: relative;
+        max-height: fit-content;
+        overflow: hidden;
+        z-index: 5;
+        color: #909090;
+        border-top: 1px solid var(--mz-border-gray);
+        pointer-events: all;
+
+        p { font-size: 18px; }
+
+        .contact-icon {
+            --size: 40px;
+            display: inline-block;
+            background-color: #15131D;
+            color: #757185;
+            text-align: center;
+            width: var(--size);
+            height: var(--size);
+            line-height: var(--size);
+            border-radius: var(--size);
+            margin-left: 1.5rem;
+
+            &:hover {
+                color: var(--mz-dark-purple);
+                background-color: white;
+            }
+
+        }
+    }
+}

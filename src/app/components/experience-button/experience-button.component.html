@@ -1,0 +1,24 @@
+
+<ng-container *ngIf="data">
+    <button  class="exp-btn" [class.active]="data.isActive">
+        <div class="exp-btn-wrapper d-flex align-items-center">
+          <div class="icon">
+            <i class="bi bi-code"></i>
+          </div>
+          <div class="exp-years text-start ms-2 ms-lg-4">
+            <p class="exp-position fs-6 mb-0">{{data.position}}</p>
+            <p class="d-lg-flex align-items-center gap-3 mb-0 text-uppercase exp-timeline">
+              <span>{{data.startYear}}</span>
+              <span class="d-inline d-lg-none dash"> - </span>
+              <app-progress-bar 
+                  class="d-none d-lg-block"
+                  width="100px" 
+                  [percent]="data.isActive ? '100%' : '0%'" 
+                  barColor="#33CBDF">
+              </app-progress-bar>
+              <span>{{data.endYear}}</span>
+            </p>
+          </div>
+        </div>
+    </button>
+</ng-container>
