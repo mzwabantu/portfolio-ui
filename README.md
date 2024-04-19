@@ -22,7 +22,7 @@ Like what you see? Feel free to get in touch.
 ### Links
 
 - Code URL: [Github Repo.](https://github.com/mzwabantu/portfolio-ui)
-- Live Site URL: [Eezy Bank](http://mzwwwa.co.za/)
+- Live Site URL: [Mzwwwa](http://mzwwwa.co.za/)
 
 
 
