@@ -12,6 +12,7 @@ import { WorkCardComponent } from './components/work-card/work-card.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { ExperienceButtonComponent } from './components/experience-button/experience-button.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
   imports: [
     BrowserModule,
     NgbModule,
-    NgbCarouselModule
+    NgbCarouselModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

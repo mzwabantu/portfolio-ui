@@ -26,7 +26,7 @@ export class AppComponent implements OnInit, OnDestroy, AfterViewInit {
 
   showNavigationArrows = false;
 	showNavigationIndicators = true;
-	// images = [1055, 194, 368].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  
 	skills = [
     {
       type: 'ui', 
