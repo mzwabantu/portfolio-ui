@@ -1,27 +1,42 @@
 # Mzwwwa
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+🚀 My portfolio code, built with Angular 16 for the frontend, fetches data from an api I created with node and express. 
+Like what you see? Feel free to get in touch.
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [Tech Stack](#tech-stack)
+- [Author](#author)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Overview
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Screenshot
 
-## Running unit tests
+![](./screenshot.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Links
 
-## Running end-to-end tests
+- Code URL: [Github Repo.](https://github.com/mzwabantu/portfolio-ui)
+- Live Site URL: [Eezy Bank](http://mzwwwa.co.za/)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Tech stack
+
+- Angular
+- GSAP 
+- Typescript
+- Bootstrap 5
+
+
+
+## Author
+
+- Website - [Mzwabantu](https://mzwwwa.co.za/)
+- LinkedIn - [mzwabantungubelanga](https://za.linkedin.com/in/mzwabantungubelanga)
+- Dribbble - [MzwaN](https://dribbble.com/MzwaN)
