@@ -161,6 +161,10 @@ p {
 }
 
 ngb-carousel {
+    .carousel-inner {
+        position: absolute !important;
+    }
+
     .carousel-item {
         transform: none !important;
         visibility: visible !important;
@@ -264,6 +268,11 @@ ngb-carousel {
 
     .carousel-indicators  {
         z-index: 100000;
+        top: 550px;
+
+        @media screen and (max-width: 767px){
+            top: 620px;
+        }
 
         [data-bs-target] {
             width: 30px;

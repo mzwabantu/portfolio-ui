@@ -50,24 +50,27 @@
     <div class="cp-5"></div>
 
     <ng-container *ngIf="skills">
-      <ngb-carousel 
-        #carousel
-        [interval]="6500"
-        [showNavigationArrows]="showNavigationArrows" 
-        [showNavigationIndicators]="showNavigationIndicators"
-        (slid)="onSlide($event)">
+      <div class="position-relative">
 
-        <ng-template *ngFor="let skill of skills" ngbSlide>
-          <div class="about mx-auto">
-            <app-about-card 
-              [skillType]="skill.type"
-              [title]="skill.title"
-              [descr]="skill.description">
-            </app-about-card>
-          </div>
-        </ng-template>
-        
-      </ngb-carousel>
+        <ngb-carousel 
+          #carousel
+          [interval]="6500"
+          [showNavigationArrows]="showNavigationArrows" 
+          [showNavigationIndicators]="showNavigationIndicators"
+          (slid)="onSlide($event)">
+  
+          <ng-template *ngFor="let skill of skills" ngbSlide>
+            <div class="about mx-auto">
+              <app-about-card 
+                [skillType]="skill.type"
+                [title]="skill.title"
+                [descr]="skill.description">
+              </app-about-card>
+            </div>
+          </ng-template>
+          
+        </ngb-carousel>
+      </div>
     </ng-container>
 
   </section>
